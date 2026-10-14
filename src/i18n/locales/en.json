@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "Dideroh Durel Ayile · Web developer in Douala",
+    "description": "Dideroh Durel Ayile, Laravel and React web developer in Douala, Cameroon. Business websites, online stores with Orange Money and MoMo, school management apps."
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu",
+    "theme": "Change theme",
+    "language": "Change language",
+    "back_top": "Back to top",
+    "whatsapp": "Chat on WhatsApp",
+    "close": "Close",
+    "home": "Home"
+  },
+  "nav": {
+    "services": "Services",
+    "projects": "Work",
+    "skills": "Skills",
+    "contact": "Contact",
+    "cta": "Free quote"
+  },
+  "wa_default": "Hello Durel, I would like a website",
+  "hero": {
+    "eyebrow": "Web developer · Douala, Cameroon",
+    "title_before": "I give",
+    "title_rotating": [
+      "your business",
+      "your school",
+      "your shop"
+    ],
+    "title_after": "a real online presence.",
+    "lead": "I'm Dideroh Durel Ayile, a Laravel and React developer. I build business websites, online stores with Orange Money and MoMo payments, and school management apps that keep working offline.",
+    "cta_wa": "Chat on WhatsApp",
+    "cta_work": "See my work",
+    "badge": "Webmaster diploma",
+    "scroll": "Scroll",
+    "photo_alt": "Photo of Dideroh Durel Ayile"
+  },
+  "about": {
+    "label": "Approach",
+    "text": "From interface design to the database and deployment, I build websites that are fast on mobile, with built-in Mobile Money payments, and apps that keep working offline. Designed for Cameroon."
+  },
+  "services": {
+    "label": "Services",
+    "title": "What I can do for you",
+    "sub": "Clear offers for shops, schools and businesses in Cameroon. Free quote on WhatsApp.",
+    "from": "From",
+    "month": "/ month",
+    "popular": "Most popular",
+    "quote": "Request a quote",
+    "wa_message": "Hello Durel, I'm interested in the \"{{service}}\" offer.",
+    "items": {
+      "presence": {
+        "title": "Online Presence Pack",
+        "desc": "Your Google Maps listing, WhatsApp Business with a product catalogue and a simple web page. Customers can finally find you."
+      },
+      "showcase": {
+        "title": "Business website",
+        "desc": "A professional 4 to 6 page website, fast on mobile, with a contact form, WhatsApp button and Google optimisation."
+      },
+      "store": {
+        "title": "Online store",
+        "desc": "Sell your products online with built-in Orange Money and MTN MoMo payments, and manage orders easily."
+      },
+      "maintenance": {
+        "title": "Maintenance & hosting",
+        "desc": "I keep your website online, secure and up to date, and make your small changes every month."
+      }
+    }
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Work",
+    "sub": "Live projects used by real schools.",
+    "client": "Client project",
+    "personal": "Personal project",
+    "visit": "Visit site",
+    "github": "View on GitHub",
+    "view": "View",
+    "open": "Open the {{name}} project",
+    "tags": {
+      "showcase": "Business website",
+      "responsive": "Responsive",
+      "webapp": "Web app",
+      "offline": "Offline"
+    },
+    "items": {
+      "staloys": "Official website of Saint Aloys Catholic Private Primary and Nursery School: school presentation and information for parents, mobile friendly.",
+      "edunote": "School management app: students, grade entry and report cards. It installs on a phone and works even offline.",
+      "dugescool": "A complete online school management platform that also works offline: students, grades, printable report cards and school administration.",
+      "durinfo": "My brand and services website: websites, apps and digital support for businesses in Douala."
+    }
+  },
+  "skills": {
+    "label": "Tech stack",
+    "title": "Skills",
+    "sub": "From interface design to the database and deployment.",
+    "filters": {
+      "all": "All",
+      "front": "Front-end",
+      "back": "Back-end",
+      "tools": "Tools"
+    },
+    "names": {
+      "mm": "Orange Money / MoMo payments",
+      "ai": "AI-assisted development",
+      "office": "Office software",
+      "pwa": "Offline PWA"
+    }
+  },
+  "why": {
+    "label": "Why me",
+    "title": "Why work with me",
+    "items": {
+      "fast": {
+        "title": "Fast delivery",
+        "desc": "I use the latest AI tools to deliver faster without cutting corners on quality."
+      },
+      "local": {
+        "title": "Built for Cameroon",
+        "desc": "Mobile Money payments, lightweight sites for mobile data, apps that work offline."
+      },
+      "contact": {
+        "title": "One point of contact",
+        "desc": "I'm based in Douala, reachable on WhatsApp, and I support you after launch."
+      }
+    }
+  },
+  "process": {
+    "label": "Process",
+    "title": "How we work together",
+    "sub": "A simple path, from the first message to launch.",
+    "steps": {
+      "talk": {
+        "title": "Let's talk",
+        "desc": "You message me on WhatsApp and tell me about your business and what you need."
+      },
+      "quote": {
+        "title": "Free quote",
+        "desc": "I send you a clear offer that fits your budget."
+      },
+      "build": {
+        "title": "I build it",
+        "desc": "I design and develop your website or app, fast on mobile."
+      },
+      "launch": {
+        "title": "Launch & support",
+        "desc": "I put your project online and stay available to support you."
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's talk about your project",
+    "sub": "Tell me what you need and I'll get back to you quickly with a free quote.",
+    "copy": "Copy address",
+    "copied": "Address copied!",
+    "circle": "Free quote • Quick reply • ",
+    "location": "Douala, Cameroon"
+  },
+  "footer": {
+    "tagline": "Websites, online stores and apps for businesses and schools in Cameroon.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "top": "Back to top",
+    "made": "Designed and built in Douala"
+  },
+  "theme": {
+    "label": "Theme",
+    "names": {
+      "light": "Light",
+      "night": "Night",
+      "lemonade": "Lemonade",
+      "cyberpunk": "Cyberpunk",
+      "luxury": "Luxury"
+    }
+  },
+  "language": {
+    "label": "Language"
+  },
+  "pwa": {
+    "offline_ready": "The site is ready to work offline.",
+    "update": "A new version is available.",
+    "reload": "Update",
+    "offline": "You're offline: the site is still available.",
+    "online": "Back online"
+  }
+}

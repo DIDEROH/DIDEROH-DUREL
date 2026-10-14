@@ -1,16 +1,39 @@
-# React + Vite
+# DIDEROH · Portfolio de Dideroh Durel Ayile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio de développeur web (Douala, Cameroun), publié sur https://dideroh.github.io.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **Vite 8**
+- **Tailwind CSS 4** + **daisyUI 5** : 5 thèmes (light, night, lemonade, cyberpunk, luxury) ; light et night gardent la dominante bleue
+- **framer-motion** pour les animations, **Lenis** pour le défilement fluide
+- **i18next** : français, anglais, espagnol, allemand, polonais et italien
+- **vite-plugin-pwa** : site installable et consultable hors ligne
+- Icônes **lucide-react**, polices Sora, Inter et Instrument Serif (auto-hébergées)
 
-## React Compiler
+## Scripts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run dev                  # serveur de développement
+npm run build                # build de production dans dist/
+npm run preview              # aperçu du build (service worker compris)
+npm run lint                 # ESLint
+npm run generate-pwa-assets  # régénère les icônes depuis public/logo.svg
+```
 
-## Expanding the ESLint configuration
+## Où modifier quoi
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Contenu | Fichier |
+| --- | --- |
+| Textes (6 langues) | `src/i18n/locales/*.json` |
+| Contact, prix, projets, compétences | `src/data/site.js` |
+| Couleurs des thèmes, polices, animations CSS | `src/index.css` |
+| Sections de la page | `src/components/sections/` |
+
+Pour ajouter un projet : une entrée dans `PROJECTS` (`src/data/site.js`) et sa description
+dans `projects.items` de chaque fichier de langue.
+
+## Déploiement
+
+Chaque push sur `main` déclenche `.github/workflows/deploy.yml`, qui construit le site et le
+publie sur GitHub Pages.

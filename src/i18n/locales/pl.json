@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "Dideroh Durel Ayile · Web developer w Duali",
+    "description": "Dideroh Durel Ayile, programista Laravel i React w Duali w Kamerunie. Strony wizytówki, sklepy internetowe z płatnościami Orange Money i MoMo, aplikacje do zarządzania szkołą."
+  },
+  "a11y": {
+    "skip": "Przejdź do treści",
+    "menu_open": "Otwórz menu",
+    "menu_close": "Zamknij menu",
+    "theme": "Zmień motyw",
+    "language": "Zmień język",
+    "back_top": "Do góry",
+    "whatsapp": "Napisz na WhatsAppie",
+    "close": "Zamknij",
+    "home": "Strona główna"
+  },
+  "nav": {
+    "services": "Usługi",
+    "projects": "Realizacje",
+    "skills": "Umiejętności",
+    "contact": "Kontakt",
+    "cta": "Bezpłatna wycena"
+  },
+  "wa_default": "Dzień dobry Durel, potrzebuję strony internetowej",
+  "hero": {
+    "eyebrow": "Web developer · Duala, Kamerun",
+    "title_before": "Daję",
+    "title_rotating": [
+      "Twojej firmie",
+      "Twojej szkole",
+      "Twojemu sklepowi"
+    ],
+    "title_after": "prawdziwą obecność w sieci.",
+    "lead": "Jestem Dideroh Durel Ayile, programista Laravel i React. Tworzę strony wizytówki, sklepy internetowe z płatnościami Orange Money i MoMo oraz aplikacje do zarządzania szkołą, które działają nawet bez internetu.",
+    "cta_wa": "Napisz na WhatsAppie",
+    "cta_work": "Zobacz realizacje",
+    "badge": "Dyplom webmastera",
+    "scroll": "Przewiń",
+    "photo_alt": "Zdjęcie Dideroha Durela Ayile"
+  },
+  "about": {
+    "label": "Podejście",
+    "text": "Od projektu interfejsu, przez bazę danych, aż po publikację tworzę strony szybkie na telefonie, ze zintegrowanymi płatnościami Mobile Money, oraz aplikacje działające nawet offline. Zaprojektowane z myślą o Kamerunie."
+  },
+  "services": {
+    "label": "Usługi",
+    "title": "Co mogę dla Ciebie zrobić",
+    "sub": "Przejrzyste oferty dla sklepów, szkół i firm w Kamerunie. Bezpłatna wycena przez WhatsApp.",
+    "from": "Od",
+    "month": "/ mies.",
+    "popular": "Najczęściej wybierany",
+    "quote": "Poproś o wycenę",
+    "wa_message": "Dzień dobry Durel, interesuje mnie oferta „{{service}}”.",
+    "items": {
+      "presence": {
+        "title": "Pakiet Obecność",
+        "desc": "Wizytówka w Mapach Google, WhatsApp Business z katalogiem i prosta strona internetowa. Klienci w końcu Cię znajdą."
+      },
+      "showcase": {
+        "title": "Strona wizytówka",
+        "desc": "Profesjonalna strona z 4–6 podstronami, szybka na telefonie, z formularzem kontaktowym, przyciskiem WhatsApp i pozycjonowaniem w Google."
+      },
+      "store": {
+        "title": "Sklep internetowy",
+        "desc": "Sprzedawaj produkty online ze zintegrowanymi płatnościami Orange Money i MTN MoMo i łatwo zarządzaj zamówieniami."
+      },
+      "maintenance": {
+        "title": "Utrzymanie i hosting",
+        "desc": "Dbam o to, by Twoja strona działała, była bezpieczna i aktualna, a co miesiąc wprowadzam drobne zmiany."
+      }
+    }
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Realizacje",
+    "sub": "Projekty online, z których korzystają prawdziwe szkoły.",
+    "client": "Projekt dla klienta",
+    "personal": "Projekt własny",
+    "visit": "Zobacz stronę",
+    "github": "Zobacz na GitHubie",
+    "view": "Zobacz",
+    "open": "Otwórz projekt {{name}}",
+    "tags": {
+      "showcase": "Strona wizytówka",
+      "responsive": "Responsywna",
+      "webapp": "Aplikacja webowa",
+      "offline": "Offline"
+    },
+    "items": {
+      "staloys": "Oficjalna strona Prywatnej Katolickiej Szkoły Podstawowej i Przedszkola Saint Aloys: prezentacja szkoły i informacje dla rodziców, dostosowana do telefonów.",
+      "edunote": "Aplikacja do zarządzania szkołą: uczniowie, wprowadzanie ocen i wydruk świadectw. Instaluje się na telefonie i działa nawet offline.",
+      "dugescool": "Kompletna platforma online do zarządzania szkołą, dostępna również offline: uczniowie, oceny, drukowanie świadectw i administracja placówki.",
+      "durinfo": "Moja marka i strona z usługami: tworzenie stron, aplikacji i wsparcie cyfrowe dla firm z Duali."
+    }
+  },
+  "skills": {
+    "label": "Stack technologiczny",
+    "title": "Umiejętności",
+    "sub": "Od projektu interfejsu po bazę danych i publikację.",
+    "filters": {
+      "all": "Wszystko",
+      "front": "Front-end",
+      "back": "Back-end",
+      "tools": "Narzędzia"
+    },
+    "names": {
+      "mm": "Płatności Orange Money / MoMo",
+      "ai": "Programowanie wspomagane AI",
+      "office": "Pakiet biurowy",
+      "pwa": "PWA offline"
+    }
+  },
+  "why": {
+    "label": "Dlaczego ja",
+    "title": "Dlaczego warto ze mną pracować",
+    "items": {
+      "fast": {
+        "title": "Szybka realizacja",
+        "desc": "Korzystam z najnowszych narzędzi sztucznej inteligencji, aby dostarczać szybciej, bez utraty jakości."
+      },
+      "local": {
+        "title": "Stworzone dla Kamerunu",
+        "desc": "Płatności Mobile Money, lekkie strony na mobilny internet, aplikacje działające offline."
+      },
+      "contact": {
+        "title": "Jeden opiekun projektu",
+        "desc": "Jestem w Duali, dostępny na WhatsAppie i wspieram Cię także po starcie strony."
+      }
+    }
+  },
+  "process": {
+    "label": "Metoda",
+    "title": "Jak razem pracujemy",
+    "sub": "Prosta droga od pierwszej wiadomości do publikacji.",
+    "steps": {
+      "talk": {
+        "title": "Rozmawiamy",
+        "desc": "Piszesz do mnie na WhatsAppie i opowiadasz o swojej działalności i potrzebach."
+      },
+      "quote": {
+        "title": "Bezpłatna wycena",
+        "desc": "Przygotowuję jasną ofertę dopasowaną do Twojego budżetu."
+      },
+      "build": {
+        "title": "Tworzę",
+        "desc": "Projektuję i buduję Twoją stronę lub aplikację, szybką na telefonie."
+      },
+      "launch": {
+        "title": "Publikacja i wsparcie",
+        "desc": "Publikuję Twój projekt i pozostaję do Twojej dyspozycji."
+      }
+    }
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Porozmawiajmy o Twoim projekcie",
+    "sub": "Napisz, czego potrzebujesz, a szybko odpowiem z bezpłatną wyceną.",
+    "copy": "Kopiuj adres",
+    "copied": "Adres skopiowany!",
+    "circle": "Bezpłatna wycena • Szybka odpowiedź • ",
+    "location": "Duala, Kamerun"
+  },
+  "footer": {
+    "tagline": "Strony internetowe, sklepy online i aplikacje dla firm i szkół w Kamerunie.",
+    "navigation": "Nawigacja",
+    "contact": "Kontakt",
+    "top": "Do góry",
+    "made": "Zaprojektowane i zbudowane w Duali"
+  },
+  "theme": {
+    "label": "Motyw",
+    "names": {
+      "light": "Jasny",
+      "night": "Noc",
+      "lemonade": "Lemoniada",
+      "cyberpunk": "Cyberpunk",
+      "luxury": "Luksus"
+    }
+  },
+  "language": {
+    "label": "Język"
+  },
+  "pwa": {
+    "offline_ready": "Strona jest gotowa do działania offline.",
+    "update": "Dostępna jest nowa wersja.",
+    "reload": "Aktualizuj",
+    "offline": "Jesteś offline: strona nadal działa.",
+    "online": "Znów online"
+  }
+}

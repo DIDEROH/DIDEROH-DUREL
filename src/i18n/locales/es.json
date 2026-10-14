@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "Dideroh Durel Ayile · Desarrollador web en Duala",
+    "description": "Dideroh Durel Ayile, desarrollador web Laravel y React en Duala, Camerún. Sitios web corporativos, tiendas en línea con Orange Money y MoMo, aplicaciones de gestión escolar."
+  },
+  "a11y": {
+    "skip": "Ir al contenido",
+    "menu_open": "Abrir el menú",
+    "menu_close": "Cerrar el menú",
+    "theme": "Cambiar de tema",
+    "language": "Cambiar de idioma",
+    "back_top": "Volver arriba",
+    "whatsapp": "Hablar por WhatsApp",
+    "close": "Cerrar",
+    "home": "Inicio"
+  },
+  "nav": {
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "cta": "Presupuesto gratis"
+  },
+  "wa_default": "Hola Durel, quiero un sitio web",
+  "hero": {
+    "eyebrow": "Desarrollador web · Duala, Camerún",
+    "title_before": "Doy a",
+    "title_rotating": [
+      "tu empresa",
+      "tu escuela",
+      "tu tienda"
+    ],
+    "title_after": "una verdadera presencia en línea.",
+    "lead": "Soy Dideroh Durel Ayile, desarrollador Laravel y React. Creo sitios web corporativos, tiendas en línea con pago por Orange Money y MoMo, y aplicaciones de gestión escolar que funcionan incluso sin conexión.",
+    "cta_wa": "Hablar por WhatsApp",
+    "cta_work": "Ver mis proyectos",
+    "badge": "Diploma de Webmaster",
+    "scroll": "Desplazar",
+    "photo_alt": "Foto de Dideroh Durel Ayile"
+  },
+  "about": {
+    "label": "Enfoque",
+    "text": "Desde el diseño de la interfaz hasta la base de datos y la puesta en línea, construyo sitios rápidos en el móvil, con pagos Mobile Money integrados, y aplicaciones que funcionan incluso sin conexión. Pensados para Camerún."
+  },
+  "services": {
+    "label": "Servicios",
+    "title": "Lo que puedo hacer por ti",
+    "sub": "Ofertas claras, adaptadas a comercios, escuelas y empresas de Camerún. Presupuesto gratis por WhatsApp.",
+    "from": "Desde",
+    "month": "/ mes",
+    "popular": "El más solicitado",
+    "quote": "Pedir presupuesto",
+    "wa_message": "Hola Durel, me interesa la oferta «{{service}}».",
+    "items": {
+      "presence": {
+        "title": "Pack Presencia",
+        "desc": "Tu ficha de Google Maps, tu WhatsApp Business con catálogo y una página web sencilla. Por fin tus clientes te encuentran."
+      },
+      "showcase": {
+        "title": "Sitio web corporativo",
+        "desc": "Un sitio profesional de 4 a 6 páginas, rápido en el móvil, con formulario de contacto, botón de WhatsApp y posicionamiento en Google."
+      },
+      "store": {
+        "title": "Tienda en línea",
+        "desc": "Vende tus productos en línea con pago Orange Money y MTN MoMo integrado, y gestiona tus pedidos fácilmente."
+      },
+      "maintenance": {
+        "title": "Mantenimiento y alojamiento",
+        "desc": "Mantengo tu sitio en línea, seguro y actualizado, y hago tus pequeños cambios cada mes."
+      }
+    }
+  },
+  "projects": {
+    "label": "Portafolio",
+    "title": "Proyectos",
+    "sub": "Proyectos en línea, usados por escuelas reales.",
+    "client": "Proyecto de cliente",
+    "personal": "Proyecto personal",
+    "visit": "Ver el sitio",
+    "github": "Ver en GitHub",
+    "view": "Ver",
+    "open": "Abrir el proyecto {{name}}",
+    "tags": {
+      "showcase": "Sitio corporativo",
+      "responsive": "Responsive",
+      "webapp": "Web app",
+      "offline": "Sin conexión"
+    },
+    "items": {
+      "staloys": "Sitio oficial de la Escuela Primaria e Infantil Privada Católica Saint Aloys: presentación de la escuela e información para los padres, adaptado al móvil.",
+      "edunote": "Aplicación de gestión escolar: alumnos, registro de notas y boletines. Se instala en el teléfono y funciona incluso sin conexión.",
+      "dugescool": "Plataforma completa de gestión escolar en línea, utilizable sin conexión: alumnos, notas, impresión de boletines y administración del centro.",
+      "durinfo": "Mi marca y mi sitio de servicios: creación de sitios web, aplicaciones y acompañamiento digital para las empresas de Duala."
+    }
+  },
+  "skills": {
+    "label": "Stack técnico",
+    "title": "Habilidades",
+    "sub": "Desde el diseño de la interfaz hasta la base de datos y la puesta en línea.",
+    "filters": {
+      "all": "Todo",
+      "front": "Front-end",
+      "back": "Back-end",
+      "tools": "Herramientas"
+    },
+    "names": {
+      "mm": "Pagos Orange Money / MoMo",
+      "ai": "Desarrollo asistido por IA",
+      "office": "Ofimática",
+      "pwa": "PWA sin conexión"
+    }
+  },
+  "why": {
+    "label": "Por qué yo",
+    "title": "Por qué trabajar conmigo",
+    "items": {
+      "fast": {
+        "title": "Entrega rápida",
+        "desc": "Uso las herramientas de inteligencia artificial más recientes para entregar más rápido, sin sacrificar la calidad."
+      },
+      "local": {
+        "title": "Pensado para Camerún",
+        "desc": "Pagos Mobile Money, sitios ligeros para conexiones móviles, aplicaciones que funcionan sin conexión."
+      },
+      "contact": {
+        "title": "Un único interlocutor",
+        "desc": "Estoy en Duala, disponible por WhatsApp, y te acompaño después del lanzamiento."
+      }
+    }
+  },
+  "process": {
+    "label": "Método",
+    "title": "Cómo trabajamos juntos",
+    "sub": "Un recorrido sencillo, del primer mensaje a la puesta en línea.",
+    "steps": {
+      "talk": {
+        "title": "Hablamos",
+        "desc": "Me escribes por WhatsApp y me cuentas tu actividad y tus necesidades."
+      },
+      "quote": {
+        "title": "Presupuesto gratis",
+        "desc": "Te propongo una oferta clara, adaptada a tu presupuesto."
+      },
+      "build": {
+        "title": "Lo construyo",
+        "desc": "Diseño y desarrollo tu sitio o tu aplicación, rápido en el móvil."
+      },
+      "launch": {
+        "title": "Lanzamiento y seguimiento",
+        "desc": "Pongo tu proyecto en línea y sigo disponible para acompañarte."
+      }
+    }
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "Hablemos de tu proyecto",
+    "sub": "Cuéntame lo que necesitas y te respondo rápido con un presupuesto gratis.",
+    "copy": "Copiar la dirección",
+    "copied": "¡Dirección copiada!",
+    "circle": "Presupuesto gratis • Respuesta rápida • ",
+    "location": "Duala, Camerún"
+  },
+  "footer": {
+    "tagline": "Sitios web, tiendas en línea y aplicaciones para empresas y escuelas de Camerún.",
+    "navigation": "Navegación",
+    "contact": "Contacto",
+    "top": "Volver arriba",
+    "made": "Diseñado y desarrollado en Duala"
+  },
+  "theme": {
+    "label": "Tema",
+    "names": {
+      "light": "Claro",
+      "night": "Noche",
+      "lemonade": "Limonada",
+      "cyberpunk": "Cyberpunk",
+      "luxury": "Lujo"
+    }
+  },
+  "language": {
+    "label": "Idioma"
+  },
+  "pwa": {
+    "offline_ready": "El sitio está listo para funcionar sin conexión.",
+    "update": "Hay una nueva versión disponible.",
+    "reload": "Actualizar",
+    "offline": "Estás sin conexión: el sitio sigue disponible.",
+    "online": "De nuevo en línea"
+  }
+}

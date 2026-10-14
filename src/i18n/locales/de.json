@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "Dideroh Durel Ayile · Webentwickler in Duala",
+    "description": "Dideroh Durel Ayile, Laravel- und React-Webentwickler in Duala, Kamerun. Unternehmenswebsites, Onlineshops mit Orange Money und MoMo, Schulverwaltungs-Apps."
+  },
+  "a11y": {
+    "skip": "Zum Inhalt springen",
+    "menu_open": "Menü öffnen",
+    "menu_close": "Menü schließen",
+    "theme": "Design wechseln",
+    "language": "Sprache wechseln",
+    "back_top": "Nach oben",
+    "whatsapp": "Auf WhatsApp schreiben",
+    "close": "Schließen",
+    "home": "Startseite"
+  },
+  "nav": {
+    "services": "Leistungen",
+    "projects": "Projekte",
+    "skills": "Kompetenzen",
+    "contact": "Kontakt",
+    "cta": "Kostenloses Angebot"
+  },
+  "wa_default": "Hallo Durel, ich möchte eine Website",
+  "hero": {
+    "eyebrow": "Webentwickler · Duala, Kamerun",
+    "title_before": "Ich verschaffe",
+    "title_rotating": [
+      "Ihrem Unternehmen",
+      "Ihrer Schule",
+      "Ihrem Geschäft"
+    ],
+    "title_after": "eine echte Online-Präsenz.",
+    "lead": "Ich bin Dideroh Durel Ayile, Laravel- und React-Entwickler. Ich erstelle Unternehmenswebsites, Onlineshops mit Zahlung über Orange Money und MoMo sowie Schulverwaltungs-Apps, die auch ohne Internetverbindung funktionieren.",
+    "cta_wa": "Auf WhatsApp schreiben",
+    "cta_work": "Meine Projekte ansehen",
+    "badge": "Webmaster-Diplom",
+    "scroll": "Scrollen",
+    "photo_alt": "Foto von Dideroh Durel Ayile"
+  },
+  "about": {
+    "label": "Ansatz",
+    "text": "Vom Interface-Design über die Datenbank bis zur Veröffentlichung baue ich Websites, die auf dem Smartphone schnell sind, mit integrierten Mobile-Money-Zahlungen, und Apps, die auch offline funktionieren. Gemacht für Kamerun."
+  },
+  "services": {
+    "label": "Leistungen",
+    "title": "Was ich für Sie tun kann",
+    "sub": "Klare Angebote für Geschäfte, Schulen und Unternehmen in Kamerun. Kostenloses Angebot über WhatsApp.",
+    "from": "Ab",
+    "month": "/ Monat",
+    "popular": "Am meisten gefragt",
+    "quote": "Angebot anfragen",
+    "wa_message": "Hallo Durel, ich interessiere mich für das Angebot „{{service}}“.",
+    "items": {
+      "presence": {
+        "title": "Präsenz-Paket",
+        "desc": "Ihr Google-Maps-Eintrag, Ihr WhatsApp Business mit Katalog und eine einfache Webseite. Endlich finden Ihre Kunden Sie."
+      },
+      "showcase": {
+        "title": "Unternehmenswebsite",
+        "desc": "Eine professionelle Website mit 4 bis 6 Seiten, schnell auf dem Smartphone, mit Kontaktformular, WhatsApp-Button und Google-Optimierung."
+      },
+      "store": {
+        "title": "Onlineshop",
+        "desc": "Verkaufen Sie Ihre Produkte online mit integrierter Zahlung über Orange Money und MTN MoMo und verwalten Sie Ihre Bestellungen ganz einfach."
+      },
+      "maintenance": {
+        "title": "Wartung und Hosting",
+        "desc": "Ich halte Ihre Website online, sicher und aktuell und übernehme jeden Monat Ihre kleinen Änderungen."
+      }
+    }
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Projekte",
+    "sub": "Live-Projekte, die von echten Schulen genutzt werden.",
+    "client": "Kundenprojekt",
+    "personal": "Eigenes Projekt",
+    "visit": "Website ansehen",
+    "github": "Auf GitHub ansehen",
+    "view": "Ansehen",
+    "open": "Projekt {{name}} öffnen",
+    "tags": {
+      "showcase": "Website",
+      "responsive": "Responsive",
+      "webapp": "Web-App",
+      "offline": "Offline"
+    },
+    "items": {
+      "staloys": "Offizielle Website der katholischen privaten Grund- und Vorschule Saint Aloys: Vorstellung der Schule und Informationen für Eltern, für Smartphones optimiert.",
+      "edunote": "Schulverwaltungs-App: Schüler, Noteneingabe und Zeugniserstellung. Sie lässt sich auf dem Handy installieren und funktioniert auch offline.",
+      "dugescool": "Komplette Online-Plattform zur Schulverwaltung, auch offline nutzbar: Schüler, Noten, Zeugnisdruck und Verwaltung der Einrichtung.",
+      "durinfo": "Meine Marke und meine Service-Website: Websites, Apps und digitale Begleitung für Unternehmen in Duala."
+    }
+  },
+  "skills": {
+    "label": "Tech-Stack",
+    "title": "Kompetenzen",
+    "sub": "Vom Interface-Design bis zur Datenbank und zur Veröffentlichung.",
+    "filters": {
+      "all": "Alle",
+      "front": "Frontend",
+      "back": "Backend",
+      "tools": "Tools"
+    },
+    "names": {
+      "mm": "Zahlungen mit Orange Money / MoMo",
+      "ai": "KI-gestützte Entwicklung",
+      "office": "Office-Anwendungen",
+      "pwa": "Offline-fähige PWA"
+    }
+  },
+  "why": {
+    "label": "Warum ich",
+    "title": "Warum mit mir arbeiten",
+    "items": {
+      "fast": {
+        "title": "Schnelle Lieferung",
+        "desc": "Ich nutze die neuesten KI-Werkzeuge, um schneller zu liefern, ohne Abstriche bei der Qualität."
+      },
+      "local": {
+        "title": "Gemacht für Kamerun",
+        "desc": "Mobile-Money-Zahlungen, leichte Websites für mobile Verbindungen, Apps, die offline funktionieren."
+      },
+      "contact": {
+        "title": "Ein einziger Ansprechpartner",
+        "desc": "Ich bin in Duala, per WhatsApp erreichbar und begleite Sie auch nach dem Launch."
+      }
+    }
+  },
+  "process": {
+    "label": "Ablauf",
+    "title": "So arbeiten wir zusammen",
+    "sub": "Ein einfacher Weg von der ersten Nachricht bis zum Launch.",
+    "steps": {
+      "talk": {
+        "title": "Wir sprechen",
+        "desc": "Sie schreiben mir auf WhatsApp und erzählen mir von Ihrem Geschäft und Ihren Wünschen."
+      },
+      "quote": {
+        "title": "Kostenloses Angebot",
+        "desc": "Ich mache Ihnen ein klares Angebot, passend zu Ihrem Budget."
+      },
+      "build": {
+        "title": "Ich setze es um",
+        "desc": "Ich gestalte und entwickle Ihre Website oder App, schnell auf dem Smartphone."
+      },
+      "launch": {
+        "title": "Launch und Betreuung",
+        "desc": "Ich bringe Ihr Projekt online und bleibe für Sie erreichbar."
+      }
+    }
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Sprechen wir über Ihr Projekt",
+    "sub": "Sagen Sie mir, was Sie brauchen. Ich antworte schnell mit einem kostenlosen Angebot.",
+    "copy": "Adresse kopieren",
+    "copied": "Adresse kopiert!",
+    "circle": "Kostenloses Angebot • Schnelle Antwort • ",
+    "location": "Duala, Kamerun"
+  },
+  "footer": {
+    "tagline": "Websites, Onlineshops und Apps für Unternehmen und Schulen in Kamerun.",
+    "navigation": "Navigation",
+    "contact": "Kontakt",
+    "top": "Nach oben",
+    "made": "Gestaltet und entwickelt in Duala"
+  },
+  "theme": {
+    "label": "Design",
+    "names": {
+      "light": "Hell",
+      "night": "Nacht",
+      "lemonade": "Limonade",
+      "cyberpunk": "Cyberpunk",
+      "luxury": "Luxus"
+    }
+  },
+  "language": {
+    "label": "Sprache"
+  },
+  "pwa": {
+    "offline_ready": "Die Website ist bereit für die Offline-Nutzung.",
+    "update": "Eine neue Version ist verfügbar.",
+    "reload": "Aktualisieren",
+    "offline": "Sie sind offline: Die Website bleibt verfügbar.",
+    "online": "Wieder online"
+  }
+}
