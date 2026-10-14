@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Durel Ayile · Développeur web à Douala</title>
+<meta name="description" content="Dideroh Durel Ayile, développeur web Laravel et React à Douala, Cameroun. Sites vitrines, boutiques en ligne avec Orange Money et MoMo, applications de gestion scolaire.">
+<meta property="og:title" content="Durel Ayile · Développeur web à Douala">
+<meta property="og:description" content="Sites web, boutiques en ligne avec Mobile Money et applications de gestion pour les entreprises et écoles au Cameroun.">
+<meta property="og:image" content="assets/durel.jpg">
+<meta name="theme-color" content="#c2410c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fffaf5; --surface:#ffffff; --text:#1c1917; --muted:#57534e; --line:#e7e5e4;
+    --accent:#c2410c; --accent-soft:#ffedd5; --accent-text:#9a3412; --wa:#16a34a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14110f; --surface:#1f1b18; --text:#f5f5f4; --muted:#a8a29e; --line:#2f2a26;
+      --accent:#f97316; --accent-soft:#2a1a10; --accent-text:#fdba74; --wa:#22c55e;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+  .logo{font-weight:800;letter-spacing:-.02em;text-decoration:none;font-size:1.1rem}
+  .logo span{color:var(--accent)}
+  nav.links{display:flex;gap:20px;font-size:.95rem}
+  nav.links a{text-decoration:none;color:var(--muted)}
+  nav.links a:hover{color:var(--text)}
+  .lang{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:999px;padding:6px 12px;font:600 .85rem Inter,sans-serif;cursor:pointer}
+  @media (max-width:720px){nav.links{display:none}}
+
+  .hero{padding:64px 0 48px}
+  .hero .wrap{display:grid;grid-template-columns:1.3fr .9fr;gap:48px;align-items:center}
+  .eyebrow{display:inline-block;background:var(--accent-soft);color:var(--accent-text);font-weight:600;font-size:.85rem;padding:6px 12px;border-radius:999px}
+  h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;letter-spacing:-.03em;margin:16px 0}
+  h1 em{font-style:normal;color:var(--accent)}
+  .lead{font-size:1.1rem;color:var(--muted);max-width:56ch}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:12px;font-weight:600;text-decoration:none;border:1px solid var(--line);background:var(--surface)}
+  .btn.primary{background:var(--wa);border-color:var(--wa);color:#fff}
+  .photo{position:relative}
+  .photo img{width:100%;max-width:360px;aspect-ratio:4/5;object-fit:cover;border-radius:24px;display:block;margin-left:auto;box-shadow:0 20px 50px -20px rgba(0,0,0,.35)}
+  .badge{position:absolute;left:0;bottom:24px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-size:.85rem;box-shadow:0 10px 30px -15px rgba(0,0,0,.3)}
+  .badge b{display:block;font-size:1rem}
+  @media (max-width:820px){
+    .hero{padding:36px 0}
+    .hero .wrap{grid-template-columns:1fr;gap:28px}
+    .photo{order:-1}
+    .photo img{margin:0 auto;max-width:240px}
+    .badge{left:50%;transform:translateX(-50%);bottom:-14px;white-space:nowrap}
+  }
+
+  section{padding:56px 0}
+  h2{font-size:clamp(1.5rem,3.5vw,2rem);letter-spacing:-.02em;margin:0 0 8px}
+  .sub{color:var(--muted);margin:0 0 32px;max-width:60ch}
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column}
+  .card h3{margin:0 0 8px;font-size:1.15rem}
+  .card p{margin:0;color:var(--muted)}
+  .price{margin-top:auto;padding-top:18px;font-weight:700;color:var(--accent-text)}
+  .price small{font-weight:500;color:var(--muted)}
+  .card.featured{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+  .tag{display:inline-block;font-size:.75rem;font-weight:600;color:var(--accent-text);background:var(--accent-soft);padding:3px 9px;border-radius:999px;margin-bottom:10px;align-self:flex-start}
+
+  .proj{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+  .proj .card{padding:0;overflow:hidden}
+  .proj .thumb{height:140px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.6rem;color:#fff;letter-spacing:-.02em}
+  .proj .body{padding:22px;display:flex;flex-direction:column;flex:1}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+  .chips span{font-size:.75rem;border:1px solid var(--line);padding:3px 9px;border-radius:999px;color:var(--muted)}
+  .proj .link{margin-top:auto;padding-top:16px;font-weight:600;color:var(--accent-text);text-decoration:none}
+
+  .skills{display:flex;flex-wrap:wrap;gap:10px}
+  .skills span{background:var(--surface);border:1px solid var(--line);padding:8px 14px;border-radius:12px;font-weight:500}
+
+  .why{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .why div{border-left:3px solid var(--accent);padding:4px 0 4px 16px}
+  .why b{display:block;margin-bottom:4px}
+  .why p{margin:0;color:var(--muted)}
+
+  .contact{background:var(--accent);color:#fff;border-radius:24px;padding:40px;text-align:center}
+  .contact h2{color:#fff}
+  .contact p{opacity:.9;margin:0 auto 24px;max-width:50ch}
+  .contact .cta{justify-content:center}
+  .contact .btn{background:#fff;color:#1c1917;border-color:#fff}
+  .contact .btn.primary{background:#16a34a;color:#fff;border-color:#16a34a}
+  @media (max-width:600px){.contact{padding:28px 18px}}
+
+  footer{padding:32px 0 48px;color:var(--muted);font-size:.9rem;text-align:center}
+
+  .wa-float{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 25px -8px rgba(0,0,0,.45);z-index:20}
+  .wa-float svg{width:28px;height:28px;fill:#fff}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#">DUR<span>INFO</span></a>
+    <nav class="links">
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#projets" data-i18n="nav_projects">Réalisations</a>
+      <a href="#competences" data-i18n="nav_skills">Compétences</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <button class="lang" id="lang" aria-label="Changer de langue">EN</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow" data-i18n="eyebrow">Développeur web · Douala, Cameroun</span>
+        <h1 data-i18n="h1">Je donne à votre entreprise ou à votre école <em>une vraie présence en ligne.</em></h1>
+        <p class="lead" data-i18n="lead">Je suis Dideroh Durel Ayile, développeur Laravel et React. Je crée des sites vitrines, des boutiques en ligne avec paiement Orange Money et MoMo, et des applications de gestion scolaire qui fonctionnent même sans connexion.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://wa.me/237694787167?text=Bonjour%20Durel%2C%20je%20souhaite%20un%20site%20web" target="_blank" rel="noopener" data-i18n="cta_wa">Discuter sur WhatsApp</a>
+          <a class="btn" href="#projets" data-i18n="cta_work">Voir mes réalisations</a>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="assets/durel.jpg" alt="Photo de Dideroh Durel Ayile" width="640" height="800">
+        <div class="badge"><b>Laravel · React</b><span data-i18n="badge">DQP Webmaster</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2 data-i18n="services_title">Ce que je peux faire pour vous</h2>
+      <p class="sub" data-i18n="services_sub">Des offres claires, adaptées aux commerces, écoles et entreprises du Cameroun. Devis gratuit sur WhatsApp.</p>
+      <div class="grid">
+        <div class="card">
+          <h3 data-i18n="s1_t">Pack Présence</h3>
+          <p data-i18n="s1_d">Votre fiche Google Maps, votre WhatsApp Business avec catalogue et une page web simple. Vos clients vous trouvent enfin.</p>
+          <div class="price"><small data-i18n="from">À partir de</small> 35 000 FCFA</div>
+        </div>
+        <div class="card featured">
+          <span class="tag" data-i18n="popular">Le plus demandé</span>
+          <h3 data-i18n="s2_t">Site vitrine</h3>
+          <p data-i18n="s2_d">Un site professionnel de 4 à 6 pages, rapide sur mobile, avec formulaire de contact, bouton WhatsApp et référencement Google.</p>
+          <div class="price"><small data-i18n="from">À partir de</small> 100 000 FCFA</div>
+        </div>
+        <div class="card">
+          <h3 data-i18n="s3_t">Boutique en ligne</h3>
+          <p data-i18n="s3_d">Vendez vos produits en ligne avec paiement Orange Money et MTN MoMo intégré, et gérez vos commandes facilement.</p>
+          <div class="price"><small data-i18n="from">À partir de</small> 200 000 FCFA</div>
+        </div>
+        <div class="card">
+          <h3 data-i18n="s4_t">Maintenance et hébergement</h3>
+          <p data-i18n="s4_d">Je garde votre site en ligne, sécurisé et à jour, et je fais vos petites modifications chaque mois.</p>
+          <div class="price"><small data-i18n="from">À partir de</small> 10 000 FCFA <small data-i18n="month">/ mois</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets">
+    <div class="wrap">
+      <h2 data-i18n="projects_title">Réalisations</h2>
+      <p class="sub" data-i18n="projects_sub">Des projets en ligne, utilisés par de vraies écoles.</p>
+      <div class="proj">
+        <div class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#0038b5,#3b82f6)">St Aloys</div>
+          <div class="body">
+            <span class="tag" data-i18n="client">Projet client</span>
+            <h3>École Saint Aloys</h3>
+            <p data-i18n="p1_d">Site officiel de l'École Primaire et Maternelle Privée Catholique Saint Aloys : présentation de l'école, informations pour les parents, adapté au mobile.</p>
+            <div class="chips"><span>Site vitrine</span><span>Responsive</span></div>
+            <a class="link" href="https://ecole-st-aloys.com" target="_blank" rel="noopener" data-i18n="visit">Voir le site →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#4f46e5,#818cf8)">EduNote</div>
+          <div class="body">
+            <span class="tag" data-i18n="client">Projet client</span>
+            <h3>EduNote</h3>
+            <p data-i18n="p2_d">Application de gestion scolaire : élèves, saisie des notes et édition des bulletins. Elle s'installe sur le téléphone et fonctionne même hors ligne.</p>
+            <div class="chips"><span>Web app</span><span data-i18n="offline">Hors ligne</span><span>Vercel</span></div>
+            <a class="link" href="https://edunote-est.vercel.app" target="_blank" rel="noopener" data-i18n="visit">Voir le site →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#c2410c,#fb923c)">DUGESCOOL</div>
+          <div class="body">
+            <span class="tag" data-i18n="personal">Projet personnel</span>
+            <h3>DUGESCOOL</h3>
+            <p data-i18n="p3_d">Plateforme complète de gestion d'école en ligne, utilisable hors ligne : élèves, notes, impression des bulletins et administration de l'établissement.</p>
+            <div class="chips"><span>Laravel</span><span>MySQL</span><span data-i18n="offline">Hors ligne</span></div>
+            <a class="link" href="https://github.com/DIDEROH" target="_blank" rel="noopener" data-i18n="github">Voir sur GitHub →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#1c1917,#57534e)">DURINFO</div>
+          <div class="body">
+            <span class="tag" data-i18n="personal">Projet personnel</span>
+            <h3>DURINFO</h3>
+            <p data-i18n="p4_d">Ma marque et mon site de services : création de sites web, applications et accompagnement numérique pour les entreprises de Douala.</p>
+            <div class="chips"><span>React</span><span>Laravel</span></div>
+            <a class="link" href="https://github.com/DIDEROH" target="_blank" rel="noopener" data-i18n="github">Voir sur GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <div class="wrap">
+      <h2 data-i18n="skills_title">Compétences</h2>
+      <p class="sub" data-i18n="skills_sub">Du design de l'interface jusqu'à la base de données et la mise en ligne.</p>
+      <div class="skills">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>PHP</span><span>Laravel</span><span>MySQL</span><span>Git &amp; GitHub</span><span data-i18n="sk_mm">Paiement Orange Money / MoMo</span><span data-i18n="sk_ai">Développement assisté par IA</span><span data-i18n="sk_office">Bureautique</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 data-i18n="why_title">Pourquoi travailler avec moi</h2>
+      <div class="why" style="margin-top:28px">
+        <div><b data-i18n="w1_t">Livraison rapide</b><p data-i18n="w1_d">J'utilise les outils d'intelligence artificielle les plus récents pour livrer plus vite, sans sacrifier la qualité.</p></div>
+        <div><b data-i18n="w2_t">Pensé pour le Cameroun</b><p data-i18n="w2_d">Paiement Mobile Money, sites légers pour les connexions mobiles, applications qui marchent hors ligne.</p></div>
+        <div><b data-i18n="w3_t">Un interlocuteur unique</b><p data-i18n="w3_d">Je suis à Douala, joignable sur WhatsApp, et je vous accompagne après la mise en ligne.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <h2 data-i18n="contact_title">Parlons de votre projet</h2>
+        <p data-i18n="contact_sub">Dites-moi ce dont vous avez besoin, je vous réponds rapidement avec un devis gratuit.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://wa.me/237694787167?text=Bonjour%20Durel%2C%20je%20souhaite%20un%20site%20web" target="_blank" rel="noopener">WhatsApp : +237 694 78 71 67</a>
+          <a class="btn" href="mailto:diderohdurel@gmail.com">diderohdurel@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Dideroh Durel Ayile · DURINFO · Douala, Cameroun · <a href="https://github.com/DIDEROH" target="_blank" rel="noopener">GitHub</a></div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/237694787167" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
+</a>
+
+<script>
+const EN = {
+  nav_services:"Services", nav_projects:"Work", nav_skills:"Skills", nav_contact:"Contact",
+  eyebrow:"Web developer · Douala, Cameroon",
+  h1:"I give your business or school <em>a real online presence.</em>",
+  lead:"I'm Dideroh Durel Ayile, a Laravel and React developer. I build business websites, online stores with Orange Money and MoMo payments, and school management apps that keep working offline.",
+  cta_wa:"Chat on WhatsApp", cta_work:"See my work", badge:"Webmaster diploma",
+  services_title:"What I can do for you",
+  services_sub:"Clear offers for shops, schools and businesses in Cameroon. Free quote on WhatsApp.",
+  s1_t:"Online Presence Pack", s1_d:"Your Google Maps listing, WhatsApp Business with a product catalogue and a simple web page. Customers can finally find you.",
+  s2_t:"Business website", s2_d:"A professional 4 to 6 page website, fast on mobile, with a contact form, WhatsApp button and Google optimisation.",
+  s3_t:"Online store", s3_d:"Sell your products online with built-in Orange Money and MTN MoMo payments, and manage orders easily.",
+  s4_t:"Maintenance & hosting", s4_d:"I keep your website online, secure and up to date, and make your small changes every month.",
+  from:"From", month:"/ month", popular:"Most popular",
+  projects_title:"Work", projects_sub:"Live projects used by real schools.",
+  client:"Client project", personal:"Personal project", visit:"Visit site →", github:"View on GitHub →", offline:"Offline",
+  p1_d:"Official website of Saint Aloys Catholic Private Primary and Nursery School: school presentation and information for parents, mobile friendly.",
+  p2_d:"School management app: students, grade entry and report cards. It installs on a phone and works even offline.",
+  p3_d:"A complete online school management platform that also works offline: students, grades, printable report cards and school administration.",
+  p4_d:"My brand and services website: websites, apps and digital support for businesses in Douala.",
+  skills_title:"Skills", skills_sub:"From interface design to the database and deployment.",
+  sk_mm:"Orange Money / MoMo payments", sk_ai:"AI-assisted development", sk_office:"Office software",
+  why_title:"Why work with me",
+  w1_t:"Fast delivery", w1_d:"I use the latest AI tools to deliver faster without cutting corners on quality.",
+  w2_t:"Built for Cameroon", w2_d:"Mobile Money payments, lightweight sites for mobile data, apps that work offline.",
+  w3_t:"One point of contact", w3_d:"I'm based in Douala, reachable on WhatsApp, and I support you after launch.",
+  contact_title:"Let's talk about your project", contact_sub:"Tell me what you need and I'll get back to you quickly with a free quote."
+};
+const nodes=[...document.querySelectorAll('[data-i18n]')];
+nodes.forEach(n=>n.dataset.fr=n.innerHTML);
+function setLang(l){
+  document.documentElement.lang=l;
+  nodes.forEach(n=>{const k=n.dataset.i18n;n.innerHTML=(l==='en'&&EN[k])?EN[k]:n.dataset.fr;});
+  document.getElementById('lang').textContent=l==='en'?'FR':'EN';
+  try{localStorage.setItem('lang',l)}catch(e){}
+}
+document.getElementById('lang').onclick=()=>setLang(document.documentElement.lang==='en'?'fr':'en');
+let saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+if(saved==='en'||(!saved&&!(navigator.language||'fr').startsWith('fr')))setLang('en');
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
