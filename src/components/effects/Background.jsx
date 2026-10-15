@@ -1,10 +1,27 @@
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 import { useEffect } from 'react'
+import { LITE } from '../../lib/perf'
 
 const SPRING = { stiffness: 30, damping: 20, mass: 1 }
 
 /** Fond fixe : grille, halos « aurora » animés qui suivent doucement la souris, et grain. */
 export default function Background() {
+  return LITE ? <LiteBackground /> : <FullBackground />
+}
+
+/** Version tactile : mêmes halos en dégradés radiaux fixes, sans filtre de flou ni grain. */
+function LiteBackground() {
+  return (
+    <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+      <div className="bg-grid absolute inset-0 mask-[radial-gradient(ellipse_80%_60%_at_50%_0%,black_10%,transparent_75%)]" />
+      <div className="absolute -top-[18vh] left-[8vw] size-[46vmax] bg-[radial-gradient(closest-side,var(--color-primary),transparent)] opacity-25" />
+      <div className="absolute top-[10vh] -right-[12vw] size-[40vmax] bg-[radial-gradient(closest-side,var(--color-accent),transparent)] opacity-20" />
+      <div className="absolute top-[55vh] left-[30vw] size-[36vmax] bg-[radial-gradient(closest-side,var(--color-secondary),transparent)] opacity-20" />
+    </div>
+  )
+}
+
+function FullBackground() {
   const mx = useMotionValue(0)
   const my = useMotionValue(0)
   const x = useSpring(mx, SPRING)

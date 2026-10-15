@@ -42,6 +42,8 @@
         root.setAttribute('data-theme', theme)
         document.querySelector('meta[name="theme-color"]').setAttribute('content', themes[theme])
         if (lang) root.lang = lang.slice(0, 2)
+        // Mode allégé sur écran tactile (voir src/lib/perf.js).
+        if (!matchMedia('(hover: hover) and (pointer: fine)').matches) root.classList.add('lite')
       })()
     </script>
   </head>

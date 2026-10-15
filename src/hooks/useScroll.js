@@ -11,10 +11,11 @@ export function useScrollTo() {
       if (lenis) {
         lenis.start()
         lenis.scrollTo(target, { duration: 1.6 })
-      } else if (target === 0) {
-        window.scrollTo({ top: 0 })
       } else {
-        target.scrollIntoView()
+        // Sans Lenis (écran tactile) : défilement fluide natif, sauf si l'utilisateur réduit les animations.
+        const behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+        if (target === 0) window.scrollTo({ top: 0, behavior })
+        else target.scrollIntoView({ behavior })
       }
       history.replaceState(null, '', hash === '#top' ? location.pathname : hash)
     },

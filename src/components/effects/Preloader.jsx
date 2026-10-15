@@ -21,14 +21,15 @@ export default function Preloader({ onDone }) {
 
   useEffect(() => {
     const last = index === words.length - 1
-    const delay = index === 0 ? 950 : last ? 650 : 190
+    // Court : sur un téléphone lent, chaque seconde d'intro retarde l'arrivée du contenu.
+    const delay = index === 0 ? 600 : last ? 400 : 150
     const timer = setTimeout(last ? onDone : () => setIndex((i) => i + 1), delay)
     return () => clearTimeout(timer)
   }, [index, words.length, onDone])
 
   const curved = `M0 0 L${w} 0 L${w} ${h} Q${w / 2} ${h + CURVE} 0 ${h} L0 0`
   const flat = `M0 0 L${w} 0 L${w} ${h} Q${w / 2} ${h} 0 ${h} L0 0`
-  const exit = { duration: 0.95, ease: EASE_IN_OUT, delay: 0.1 }
+  const exit = { duration: 0.8, ease: EASE_IN_OUT, delay: 0.05 }
 
   return (
     <motion.div

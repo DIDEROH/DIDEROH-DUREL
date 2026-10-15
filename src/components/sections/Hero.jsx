@@ -13,10 +13,16 @@ import { useTranslation } from 'react-i18next'
 import { useIntroDone } from '../../context/intro'
 import { waLink } from '../../data/site'
 import { useScrollTo } from '../../hooks/useScroll'
-import { EASE_OUT, blurUp, cn, staggerContainer } from '../../lib/motion'
+import { EASE_OUT, blurUp, cn, fadeUp, staggerContainer } from '../../lib/motion'
+import { LITE } from '../../lib/perf'
 import { WhatsAppIcon } from '../ui/Icons'
 import Magnetic from '../ui/Magnetic'
 import RevealWords from '../ui/RevealWords'
+
+// Sur écran tactile, animer un flou (filter: blur) coûte trop cher : simple fondu à la place.
+const enter = LITE ? fadeUp : blurUp
+const WORD_BLUR = LITE ? {} : { filter: 'blur(8px)' }
+const WORD_SHARP = LITE ? {} : { filter: 'blur(0px)' }
 
 const CHIPS = [
   { label: 'React', icon: Atom, className: '-left-6 top-[12%] sm:-left-12', float: 5 },
@@ -41,9 +47,9 @@ function RotatingWords({ words, active }) {
       <AnimatePresence mode="popLayout" initial={false}>
         <motion.span
           key={word}
-          initial={{ y: '100%', opacity: 0, filter: 'blur(8px)' }}
-          animate={{ y: '0%', opacity: 1, filter: 'blur(0px)' }}
-          exit={{ y: '-100%', opacity: 0, filter: 'blur(8px)' }}
+          initial={{ y: '100%', opacity: 0, ...WORD_BLUR }}
+          animate={{ y: '0%', opacity: 1, ...WORD_SHARP }}
+          exit={{ y: '-100%', opacity: 0, ...WORD_BLUR }}
           transition={{ duration: 0.75, ease: EASE_OUT }}
           className="text-gradient absolute inset-x-0 top-0 animate-gradient-pan pb-[0.1em]"
         >
@@ -189,14 +195,14 @@ export default function Hero() {
     >
       <div className="mx-auto grid w-full max-w-6xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10">
         <motion.div
-          style={{ y: textY, opacity: fade, filter }}
+          style={{ y: textY, opacity: fade, filter: LITE ? undefined : filter }}
           initial="hidden"
           animate={state}
           variants={staggerContainer(0.12, 0.15)}
           className="relative z-10"
         >
           <motion.span
-            variants={blurUp}
+            variants={enter}
             className="inline-flex items-center gap-2.5 rounded-full border border-primary/20 bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-primary"
           >
             <span className="relative flex size-2">
@@ -229,11 +235,11 @@ export default function Hero() {
             </span>
           </h1>
 
-          <motion.p variants={blurUp} className="mt-6 max-w-xl text-base text-base-content/75 sm:text-lg">
+          <motion.p variants={enter} className="mt-6 max-w-xl text-base text-base-content/75 sm:text-lg">
             {t('hero.lead')}
           </motion.p>
 
-          <motion.div variants={blurUp} className="mt-9 flex flex-wrap items-center gap-3 sm:gap-4">
+          <motion.div variants={enter} className="mt-9 flex flex-wrap items-center gap-3 sm:gap-4">
             <Magnetic>
               <a
                 href={waLink(t('wa_default'))}

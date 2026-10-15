@@ -3,6 +3,7 @@ import { useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { WHY } from '../../data/site'
 import { cn } from '../../lib/motion'
+import { LITE } from '../../lib/perf'
 import SectionHeading from '../ui/SectionHeading'
 
 const PALETTES = [
@@ -28,7 +29,10 @@ function StackCard({ item, index, total, progress }) {
           PALETTES[index % PALETTES.length],
         )}
       >
-        <div aria-hidden="true" className="absolute -top-1/2 -left-1/4 size-[36rem] rounded-full bg-white/10 blur-3xl" />
+        {/* Halo flou recalculé à chaque changement d'échelle : omis sur écran tactile. */}
+        {!LITE && (
+          <div aria-hidden="true" className="absolute -top-1/2 -left-1/4 size-[36rem] rounded-full bg-white/10 blur-3xl" />
+        )}
         <div aria-hidden="true" className="bg-noise absolute inset-0 opacity-[0.07] mix-blend-overlay" />
         <motion.span aria-hidden="true" style={{ rotate }} className="absolute -right-12 -bottom-16 opacity-10">
           <Icon className="size-72 sm:size-96" strokeWidth={1.25} />
